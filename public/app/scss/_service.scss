@@ -1,0 +1,96 @@
+.service{
+    
+    background-color: $veryLightGray;
+    //padding-left: 2.5rem;
+    //padding-right: 2.5rem;
+    padding-top: 1rem;
+    //padding-bottom: 1rem;
+    //text-align: center;
+    justify-items: center;
+    
+    
+    
+    @include breakpoint-up(large){
+        display: flex;
+       
+    }
+
+    &__grid{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        @include breakpoint-up(medium){
+         display: flex;
+         flex-wrap: wrap;
+
+        }
+        
+    }
+
+   
+
+    &__item{
+        //border: 1px solid magenta;
+        padding: 1rem;
+        @include breakpoint-up(medium){
+            flex:1 0 50%;
+
+        }
+        @include breakpoint-up(large){
+            //grid-area: item;
+            //margin-top: 1.7rem;
+            //justify-items: center;
+            flex: 1;
+            }
+    }
+
+    &__icon{
+        //text-align: center;
+        //padding: 3rem;
+        margin-bottom: 2.75rem;
+        .border{
+            height: 20rem;
+            width: 20rem;
+            border-radius: 50%;
+            //object-fit: cover;
+            @include breakpoint-up(large){
+                height: 25rem;
+                width: 25rem;
+                padding: 3rem;
+                
+                }
+                @include breakpoint-up(medium){
+                    height: 100%;
+                    width: 100%;
+                    padding: 3rem;
+                    object-fit: cover;
+                    
+                }
+               
+    
+        }
+            
+    }
+
+    
+    &__title{
+        text-align: center;
+        
+    }
+    &__description{
+
+        align-items: center;
+        margin-left: 3rem;
+        margin-right: 3rem;
+
+    }
+
+    &__more{
+    h1{
+        margin-top: 4rem;
+        text-align: center;
+        margin-bottom: 4rem;
+
+    }
+}
+
+}

@@ -1,0 +1,95 @@
+.ig{
+    position: relative;
+    text-align: center;
+    clear: both;
+    margin: 0 ;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    width: 100%;
+
+    p{
+        font-style: normal;
+        font-size: 17px;
+
+    }
+
+    a{
+        border: none!important;
+        position: static;
+        display: inline;
+        padding: 0;
+        z-index: 999999;
+        text-decoration: none;
+        color: transparent;
+        touch-action: manipulation;
+    }
+
+    &__container{
+        display: inline-block;
+        position: relative;
+        vertical-align: top;
+        padding: 0;
+        color: #fff;
+        
+
+        img{
+            max-width: none;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 101%;
+            height: 101%;
+            border-radius: 0;
+            transform: initial;
+            display: initial;
+            opacity: 1;
+        }
+    }
+
+        &__overlay{
+            opacity: 0;
+            position: absolute;
+            background-color: transparent;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            transition: all .2s linear;
+        }
+
+        &__overlay::before {
+            content: ' ';
+            opacity: 1;
+            background: url(/images/icon-instagram.svg) no-repeat center center;
+            background-size: 20px 20px;
+            position: absolute;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+    }
+
+    &__overlay::after {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: .5;
+    }
+
+
+    
+
+
+}

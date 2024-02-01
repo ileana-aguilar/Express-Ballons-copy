@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--demenions based on users device-->
+
+
+   
+    <link rel="shortcut icon" type= "image/png" sizes="32x32" href=".public/images/favicon.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/style.css" />
+    <title> Express Balloons | Book Now </title>
+    
+   <style>
+       .attribution { font-size: 11px; text-align: center;}
+       .attribution a { color: hsl(228, 45%, 44%);}
+   </style>
+</head>
+
+ 
+<body>
+<header class="header">
+    <div class="overlay has-fade"> </div>
+    <nav class="navbar  flex flex-jc-sb flex-ai-c">
+        <a href="index.html" class="header__logo ">
+            <img src="images/Exlogo.png"alt="express ballons" height="40" width="140" />
+        </a>
+    
+        <a id="btnHamburger" href="#" class = "header__toggle  hide-for-desktop "> <!--add eventlistener @click= some fuction (click here)-->
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div class="header__links hide-for-moblie">
+            <a href="index.html">HOME</a>
+            <a href="http://">OUR STORY</a>
+            <a href="http://">SERVICES</a>
+            <a href="http://">GALLERY</a>
+            
+        </div>
+
+        <a href="book.html" class="button header__cta2 hide-for-moblie hide-for-desktop"> BOOK NOW</a>
+    </nav>
+
+    <div class= "header__menu has-fade">
+
+        
+            <a href="index.html"class="header__menulinks">HOME</a>
+            <a href="http://"class="header__menulinks">OUR STORY</a>
+            <a href="http://"class="header__menulinks">SERVICES</a>
+            <a href="http://"class="header__menulinks">GALLERY</a>
+            
+            <a href="book.html" class="button header__cta header__menulinks"> BOOK NOW</a>
+        
+
+                <div class="header__socials">
+                    <a href="https://www.facebook.com/OfficialExpressBalloons/">
+                        <svg fill="rgb(71, 78, 128)" version="1.1" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 32 32"><title>Facebook</title><path d="M31.997 15.999c0-8.836-7.163-15.999-15.999-15.999s-15.999 7.163-15.999 15.999c0 7.985 5.851 14.604 13.499 15.804v-11.18h-4.062v-4.625h4.062v-3.525c0-4.010 2.389-6.225 6.043-6.225 1.75 0 3.581 0.313 3.581 0.313v3.937h-2.017c-1.987 0-2.607 1.233-2.607 2.498v3.001h4.437l-0.709 4.625h-3.728v11.18c7.649-1.2 13.499-7.819 13.499-15.804z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/officialexpressballoons/"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20"><title>instagram</title><path fill="rgb(71, 78, 128)" d="M10.333 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.976 1.409 4.1 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.058 4.042-.124 2.687-1.386 3.975-4.099 4.099-1.055.048-1.37.058-4.042.058-2.67 0-2.986-.01-4.04-.058-2.717-.124-3.976-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zm0-1.802C7.618 0 7.278.012 6.211.06 2.579.227.56 2.242.394 5.877.345 6.944.334 7.284.334 10s.011 3.057.06 4.123c.166 3.632 2.181 5.65 5.816 5.817 1.068.048 1.408.06 4.123.06 2.716 0 3.057-.012 4.124-.06 3.628-.167 5.651-2.182 5.816-5.817.049-1.066.06-1.407.06-4.123s-.011-3.056-.06-4.122C20.11 2.249 18.093.228 14.458.06 13.39.01 13.049 0 10.333 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.339-9.87a1.2 1.2 0 10-.001 2.4 1.2 1.2 0 000-2.4z"/></svg>
+                    </a>
+                </div>
+            
+            
+    </div>
+
+</header>
+
+<body>
+<section class="quote">
+    <div class="parent">
+        <div class="child1">
+            
+                <div class="request">
+                    <h1>Request a quote</h1>
+                    <p>We'll call and comfirm over the phone</p>
+                </div>
+        </div>
+
+            <div class="child2">
+
+                <form class="quote-form" > 
+
+
+                    <div class="customer-details">
+                    
+
+                        <div class="fieldset-space">
+
+                                <div class="h1">Tell us about yourself</div>
+                        
+                            <!--fieldset-->
+                                <div class="wrap">
+                                    <div class="input-box">
+                                        <label class="details" for = "First Name: "> First Name: *</label><br>
+                                        <input type="text" name="First Name:" id="firstName"  placeholder="Enter your first name" required>
+                                    </div>
+                                        <div class="input-box">
+                                            <label class="details" for = "Last Name: ">Last Name: *</label><br>
+                                            <input type="text" name="Last Name:" id="lastName"  placeholder="Enter your last name" required>
+                                        </div>
+                                </div>
+
+                                <div class="wrap">
+                                    <div class="input-box">
+                                        <label class="details" for="Email: "> Email: *</label><br>
+                                        <input type="email" name="Email:" id="email" placeholder="doe@example.com"  required>
+                                    </div>
+                                        <div class="input-box">
+                                            <label class="details" for="phoneNumber "> Phone Number: *</label><br>
+                                            <input type="tel" name="phonenumber " id="phoneNumber " placeholder="Enter your number" required>
+                                        </div>
+                                </div>
+
+                                <div class="wrap">
+                                    <div class="companynameinput-box">
+                                        <label class="details" for="Company:">Company/School/Organization (if applicable):</label><br>
+                                        <input type="text" name="Company:" id="company" >
+                                    </div>
+                                </div>   
+                            <!--fieldset-->
+                        </div>   
+
+
+
+                        <div class="fieldset-space">
+                                    <div class="h1">The event</div>
+                            <!--<fieldset>-->
+                                <div class="wrap">
+                                    <div class="input-box">
+                                        <label for="Event Date:"> Event Date: *</label><br>
+                                        <input type="date" name="Event Date:" id="eventDate" placeholder="MM/DD/YYYY" required>
+                                    </div>
+                                        <div class="input-box">
+                                            <label for="Event time:"> Event Start Time: *</label><br>
+                                            <input type="time" name="Event time:" id="eventTime" required><br>
+                                        </div>
+                                </div>  
+                                
+                                
+                                <div class="event wrap"> 
+                                    <legend>Where is the event located? *</legend>
+                                    
+                                        <div>
+                                            <br>
+                                            <input type="radio" id="indoor" name="location"  />
+                                            <label for="indoor">Indoor</label>
+                                        
+                                    
+                                            
+                                                <input type="radio" id="outdoor" name="location"  />
+                                                <label for="outdoor">Outdoor (In the summertime (over 60 degress), We strongly recommend shaded or covered areas for ballon decor. Balloons exposed directly to sunlight may pop!)</label>
+                                            
+                                    
+                                            
+
+                                                
+                                                    <input type="radio" id="both" name="location"   />
+                                                    <label for="both">Both</label>
+                                                </div>
+
+                                                
+
+                                </div>
+                                
+                                    
+                                <!--Hide for outdoor-->
+                                <div id="flexibledate" style="display: none;">                                
+                                    
+                                    <p> Is your delivery date flexible? For example, can we deliver and set up the day before if we're booked on your event date? **This option is only avalible for indoor events. Balloons last much longer indoors in a controlled environment than it does outdoors**</p>
+                                                
+                                    <input type="radio" id="flexible " name="flexiblity" value="Yes">
+                                    <label for="flexible">Yes, I'm flexible</label>
+                                    <input type="radio" id="notflexible " name="flexiblity" value="No">
+                                    <label for="notflexible">No, I need same day set up on date of event</label>
+                                </div>
+
+                            
+                                <!---->
+                                <br>
+                                <div class="wrap">
+                                    <div class="eventstreet">
+                                        <label for="Event Address:"> Event Address*:</label><br>
+                                        <input type="text" name="Event Address:" id="eventAddress" placeholder="Street Address*" required>
+                                    </div>
+                                </div>
+                    
+                                
+                                <div class="wrap">
+                                    <div class="eventapt">
+                                        <input type="text" name="Event apt:" id="eventApt" placeholder="Apartment, house, suite, unit, floor, etc" required>
+                                    </div>
+                                </div>
+
+                                <div class="wrap ">
+                                    <div class="eventcity">
+                                        <input type="text" name="Event city:" id="eventCity" placeholder="City*" required>
+                                    </div>
+                                        <div class="eventstate">
+                                            <input type="text" name="Event state:" id="eventState" placeholder="State*" required>
+                                        </div>
+                                            <div class="eventzip">
+                                                <input type="text" name="Event zip:" id="eventZip" placeholder="Zip Code*" required>
+                                            </div>
+                                </div>
+                            
+                    
+                                <!--fieldset-->
+                            </div>
+
+
+
+                            <div class="fieldset-space">
+                            
+                                <div class="h1">Your vision</div>
+                    
+                                    <!--fieldset-->
+                                
+                    
+                                        <p> What are the colors of the event? If your color board calls for color or colors, we'll discuss them during our confirmation process. *</p>
+                                        <label></label>
+                                        <input type="text" id="eventColors" required>
+                                
+                            <div class="wrap ">
+
+                                <div class="event-type">
+                                    <p> What type of event are you hosting?</p>
+                                        <input type="checkbox" name="" id="Corporate">
+                                        <label for="">Corporate Event</label><br>
+                                        <input type="checkbox" name="" id="Birthday">
+                                        <label for="">Birthday Party</label><br>
+                                        <input type="checkbox" name="" id="GradProm">
+                                        <label for="">Graduation/Prom</label><br>
+                                        <input type="checkbox" name="" id="BabyShower">
+                                        <label for="">Baby Shower</label><br>
+                                        <input type="checkbox" name="" id="GenderRevel">
+                                        <label for="">Gender Revel</label><br>
+                                        <input name="eventTypeOther" type="checkbox" id="eventTypeOther">
+                                        <input id= "eventTypeOther" type="text"  name="eventTypeOther" placeholder="Other: Please specify here"><br>
+                                </div>
+                                <div class="areas-decorated">
+                                    <p>Area/Areas you want to decorated:</p>
+                                        <input type="checkbox" name="" id="VenueEntrance">
+                                        <label for="">Venue Entrance</label><br>
+                                        <input type="checkbox" name="" id="stage">
+                                        <label for="">Stage</label><br>
+                                        <input type="checkbox" name="" id="FrontDoor">
+                                        <label for="">Front Door</label><br>
+                                        <input type="checkbox" name="" id="FrontYard">
+                                        <label for="">Front Yard</label><br>
+                                        <input type="checkbox" name="" id="Backyard">
+                                        <label for="">Backyard</label><br>
+                                        <input type="checkbox" name="" id="Staircase">
+                                        <label for="">Staircase</label><br>
+                                        <input type="checkbox" name="" id="ceiling">
+                                        <label for="">Ceiling</label><br>
+                                        <input type="checkbox" name="" id="otherArea">
+                                        <input id= "otherAreaText" type="text" placeholder="Other: Please specify here"><br>
+                                </div>
+
+                                <div class="designs-wanted">
+                                    <p>What ballon designs would you want us to create for your event? *Enter value in box*</p>
+                                        <input type="text" name="" id="garlandArch">
+                                        <label for="">Organic Balloon Garlands or demi-arches</label><br>
+                                        <input type="text" name="" id="ringGarland">
+                                        <label for="">Ring Organic Balloon Garlands or demi-arches</label><br>
+                                        <input type="text" name="" id="ballonWall">
+                                        <label for="">Ballon Wall</label><br>
+                                        <input type="text" name="" id="ballonArch">
+                                        <label for="">Balloon Arches</label><br>
+                                        <input type="text" name="" id="ballonColumn">
+                                        <label for="">Balloon Columns</label><br>
+                                        <input type="text" name="" id="ballonCenterpieces">
+                                        <label for="">Balloon Centerpieces</label><br>
+                                        <input type="text" name="" id="heliumBouquets">
+                                        <label for="">Helium-filled Ballon Bouquets</label><br>
+                                        <input type="text" name="" id="otherDesign">
+                                        <input id= "otherDesignText" type="text" placeholder="Other: Please specify here">
+                                        
+                                </div>
+                            </div>
+                                
+                                <h1>Inspo Photo:</h1> 
+                                <div class="inspo">
+                                    
+                                        <div class="drop-zone" id="drop-zone">
+                                            <div class="filesvg">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M17.25 29.15H36.8l-6.35-8.55-5.15 6.75L21.9 23ZM13 38q-1.2 0-2.1-.9-.9-.9-.9-2.1V7q0-1.2.9-2.1.9-.9 2.1-.9h28q1.2 0 2.1.9.9.9.9 2.1v28q0 1.2-.9 2.1-.9.9-2.1.9Zm0-3h28V7H13v28Zm-6 9q-1.2 0-2.1-.9Q4 42.2 4 41V10h3v31h31v3Zm6-37v28V7Z"/></svg>
+                                            </div>
+
+                                            <output class="result";></output>
+
+                                                    <div class="dragprompt">
+                                                        <!--<span class="file-drag-prompt">Drag & drop image here </span>
+                                                        <span class="file-drag-prompt2">or</span>
+                                                        <input type="file" hidden>-->
+                                                        
+
+                                                            <div class="file-input">
+
+                                                            <button type="button" class="file-select-botton" onclick="importData()">click to browse images</button>
+                                                            
+                                                            
+
+                                                            <button type="reset" class="file-reset-botton">reset upload</button>
+                                                            
+                                                        </div>
+                                                    </div>
+                                            
+                                        </div>
+                                </div>
+
+                                <div class="extrainfo">
+                                    <label for="moreinfo"></label><br>
+                                    Is there anything else you want to tell us?
+                                    <textarea id="moreinfo" name="moreInfo" placeholder="We're all ears!"></textarea>
+                                </div>
+
+
+                                <br>
+                                    <label for="cars">How did you hear about Express Ballons?</label><br>
+                                    <select id="howYouKnowUs" name="hear">
+                                        <option value="Select an option">Select an option</option>
+                                        <option value="Facebook">Facebook</option>
+                                        <option value="Instagram">Instagram</option>
+                                        <option value="Google">Google</option>
+                                        <option value="Referral">Referral</option>
+                                        <option value="other">Other</option>
+                                    </select><br>
+                    
+                                Please read & accept!
+                                <input type="checkbox"><br>
+                            
+                            <!--fieldset-->
+                             </div>
+                        </div>
+
+                                    <input type="submit" class="submit" value="Submit"></input>
+                    
+                    </div>
+                </form>
+        </div>
+    </div>
+</section>
+
+
+
+    <div class="space">
+        
+    </div>
+
+    
+<script src="/app/js/book.js"></script> 
+
+</body>
+
+<footer class="footer">
+    <div class="container">
+        <a href="/" class="footer__logo ">
+            <img src="images/Exlogo.png"alt="express ballons" height="40" width="140" />
+        </a>
+
+            <div class="footer__slogan col">
+                <p> Next level ballon artistry</p>
+            </div>
+
+                
+
+                <div class="footer__links col1">
+                    <h4>Explore</h4>
+                    <a href="">About Us</a>
+                    <a href="">Contact Us</a>
+                    <a href="">Gallery</a>
+                    <a href="">FAQs</a>
+                </div>
+        
+            <div class="footer__hours col2">
+                <h4>Customer Service</h4>
+                <p>Mon-Fri: 9am-4pm EST</p>
+                <p>Saturday: closed</p>
+                <p>Sunday: closed</p>
+            </div>
+   
+            <div class="footer__socials">
+                <h4>Follow Us!</h4>
+                <a href="https://www.facebook.com/OfficialExpressBalloons/">
+                    <svg fill="rgb(71, 78, 128)" version="1.1" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 32 32"><title>Facebook</title><path d="M31.997 15.999c0-8.836-7.163-15.999-15.999-15.999s-15.999 7.163-15.999 15.999c0 7.985 5.851 14.604 13.499 15.804v-11.18h-4.062v-4.625h4.062v-3.525c0-4.010 2.389-6.225 6.043-6.225 1.75 0 3.581 0.313 3.581 0.313v3.937h-2.017c-1.987 0-2.607 1.233-2.607 2.498v3.001h4.437l-0.709 4.625h-3.728v11.18c7.649-1.2 13.499-7.819 13.499-15.804z"></path>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/officialexpressballoons/"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20"><title>instagram</title><path fill="rgb(71, 78, 128)" d="M10.333 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.976 1.409 4.1 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.058 4.042-.124 2.687-1.386 3.975-4.099 4.099-1.055.048-1.37.058-4.042.058-2.67 0-2.986-.01-4.04-.058-2.717-.124-3.976-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zm0-1.802C7.618 0 7.278.012 6.211.06 2.579.227.56 2.242.394 5.877.345 6.944.334 7.284.334 10s.011 3.057.06 4.123c.166 3.632 2.181 5.65 5.816 5.817 1.068.048 1.408.06 4.123.06 2.716 0 3.057-.012 4.124-.06 3.628-.167 5.651-2.182 5.816-5.817.049-1.066.06-1.407.06-4.123s-.011-3.056-.06-4.122C20.11 2.249 18.093.228 14.458.06 13.39.01 13.049 0 10.333 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.339-9.87a1.2 1.2 0 10-.001 2.4 1.2 1.2 0 000-2.4z"/></svg>
+                </a>
+            </div>
+
+            <div class="footer__cta">
+                <!--<a href="#" class="button footer__botton header__menulinks"> BOOK NOW</a>-->
+            </div>
+                <div class="footer__copyright">
+                    &copy; 2022 Express Balloons. All Rights Reserved.
+                </div>
+
+    </div>
+    
+           
+        
+
+        
+
+
+        
+        
+    
+        
+
+    
+        
+</footer>
+
+</html>

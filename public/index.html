@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--demenions based on users device-->
+
+
+   
+    <link rel="shortcut icon" type= "image/png" sizes="32x32" href="./images/favicon.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/style.css" />
+    <title> Express Balloons Official | Express Balloons landing page </title>
+    
+   <style>
+       .attribution { font-size: 11px; text-align: center;}
+       .attribution a { color: hsl(228, 45%, 44%);}
+   </style>
+</head>
+
+
+<body>
+<header class="header">
+    <div class="overlay has-fade"> </div>
+    <nav class="container  flex flex-jc-sb flex-ai-c">
+        <a href="index.html" class="header__logo ">
+            <img src="images/Exlogo.png"alt="express ballons" height="40" width="140" />
+        </a>
+    
+        <a id="btnHamburger" href="#" class = "header__toggle  hide-for-desktop "> <!--add eventlistener @click= some fuction (click here)-->
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div class="header__links hide-for-moblie">
+            <a href="index.html">HOME</a>
+            <a href="http://">OUR STORY</a>
+            <a href="http://">SERVICES</a>
+            <a href="http://">GALLERY</a>
+            
+        </div>
+
+        <a href="book.html" class="button header__cta2 hide-for-moblie"> BOOK NOW</a>
+    </nav>
+
+    <div class= "header__menu has-fade">
+
+        
+            <a href="index.html"class="header__menulinks">HOME</a>
+            <a href="http://"class="header__menulinks">OUR STORY</a>
+            <a href="http://"class="header__menulinks">SERVICES</a>
+            <a href="http://"class="header__menulinks">GALLERY</a>
+            
+            <a href="book.html" class="button header__cta header__menulinks"> BOOK NOW</a>
+        
+
+                <div class="header__socials">
+                    <a href="https://www.facebook.com/OfficialExpressBalloons/">
+                        <svg fill="rgb(71, 78, 128)" version="1.1" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 32 32"><title>Facebook</title><path d="M31.997 15.999c0-8.836-7.163-15.999-15.999-15.999s-15.999 7.163-15.999 15.999c0 7.985 5.851 14.604 13.499 15.804v-11.18h-4.062v-4.625h4.062v-3.525c0-4.010 2.389-6.225 6.043-6.225 1.75 0 3.581 0.313 3.581 0.313v3.937h-2.017c-1.987 0-2.607 1.233-2.607 2.498v3.001h4.437l-0.709 4.625h-3.728v11.18c7.649-1.2 13.499-7.819 13.499-15.804z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/officialexpressballoons/"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20"><title>instagram</title><path fill="rgb(71, 78, 128)" d="M10.333 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.976 1.409 4.1 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.058 4.042-.124 2.687-1.386 3.975-4.099 4.099-1.055.048-1.37.058-4.042.058-2.67 0-2.986-.01-4.04-.058-2.717-.124-3.976-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zm0-1.802C7.618 0 7.278.012 6.211.06 2.579.227.56 2.242.394 5.877.345 6.944.334 7.284.334 10s.011 3.057.06 4.123c.166 3.632 2.181 5.65 5.816 5.817 1.068.048 1.408.06 4.123.06 2.716 0 3.057-.012 4.124-.06 3.628-.167 5.651-2.182 5.816-5.817.049-1.066.06-1.407.06-4.123s-.011-3.056-.06-4.122C20.11 2.249 18.093.228 14.458.06 13.39.01 13.049 0 10.333 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.339-9.87a1.2 1.2 0 10-.001 2.4 1.2 1.2 0 000-2.4z"/></svg>
+                    </a>
+                </div>
+            
+            
+    </div>
+
+</header>
+
+<section class="hero">
+    
+        <div class="hero__image herofade" >
+            <div class="slideshow-container">
+          <div class="img--container fade">
+                <img class= "image" src="/public/images/slide5.JPG">
+            </div>
+            <div class="img--container fade">
+                <img class= "image" src="/public/images/slide3.JPG">
+            </div>
+            <div class="img--container fade">
+                <img class= "image" src="/public/images/goldGarland.jpg">
+            </div>
+            <div class="img--container fade">
+                <img class= "image" src="/public/images/slide4.JPG">
+            </div>
+            <div class="img--container fade">
+                <img class= "image" src="/public/images/slide6.JPG">
+            </div>
+            <a class="prevbtn" onclick="changeSlide(-1)">❮</a>
+            <a class="nextbtn" onclick="changeSlide(1)">❯</a>
+            <!--<div class="hero__book">
+                <a href="#" class="button hero__cta "> BOOK NOW 
+                    <img src="/images/arrow-dark.svg" class="hero__arrow" height="12" width="20">
+                
+                </a>
+            </div>-->
+        </div>
+            
+        </div>
+
+
+
+        <div class="hero__text " >
+            <div class="herofade ">
+                <h1>
+                    <span class="a-wrap">
+                        <span class="l1 textright">
+                    Next level ballon artistry
+                    </span>
+                        </span>
+                </h1>
+        
+                <P>
+                    <span class="a-wrap">
+                        <span class="l2 textright">
+                    Bring your event to life. With Express Ballons your events will go from drap to fab.
+                    </span>
+                        </span>
+                </P>
+            </div>
+        <div class="herofade">
+            <a href="book.html" class="button hero__cta  "> BOOK NOW 
+                <!--<img src="/images/arrow-dark.svg" class="hero__arrow" height="12" width="20">-->
+                <svg xmlns="http://www.w3.org/2000/svg" height="12" width="20" fill="none" viewBox="0 0 22 17">
+                    <path fill="rgb(61, 67, 142)" d="M11.062 9.34l-10.38.03V7.21l10.38.03 7.11.06-7.08-7.2h2.67l8.16 8.19-8.16 8.16h-2.64l7.08-7.17-7.14.06z"/>
+                  </svg>
+            </a>
+        </div>
+        </div>
+    </div>
+    
+
+    
+</section>
+<section class="whatdowedo">
+    <div class="whatdowedo__container">
+        <div class="whatdowedo__question textfade">
+            <h1>What do we do?</h1>
+        </div>
+                <div class="whatdowedo__answer">
+                    <p> At Express Ballons, we bring life to your events with our vibrant and creative balloon decor. Specializing in a variety of balloon arrangements, we ensure every celebration is a memorable one.  </p>
+                </div>
+                <div class="whatdowedo__cta">
+                    <a href="#" class="button whatdowedo__botton header__menulinks"> Learn More</a>
+                </div>
+                
+    </div>
+</section>
+
+
+<section class="Service container ">
+    <div class="service__toptitle textfade">
+        <h3>Services</h3>
+    </div>  
+    
+    <div class="service__grid ">
+        <div class="service__item">
+            <div class="service__icon ">
+                <img class="border icontextfade" src="/public/images/slide3.JPG">
+            </div>
+                <div class="service__title">
+                    <h1>Ballon Arch</h1>
+                </div>
+                    <div class="service__description">
+                        <p> Elevate your celebration with the magic of a balloon arch! Our balloon arches are not just decorations; they are vibrant masterpieces that create an unforgettable atmosphere. Perfect for every occasion, from grand weddings to intimate birthday parties, our arches are designed to impress.  </p>
+                        
+                    </div>
+            
+        </div>
+    
+     
+
+        <div class="service__item">
+            <div class="service__icon  ">
+                <img class="border icontextfade" src="/public/images/slide5.JPG">
+            </div>
+                <div class="service__title">
+                    <h1>Garland Arch</h1>
+                </div>
+                    <div class="service__description">
+                        <p> A step beyond traditional decorations, our Garland Arches add a touch of sophistication and whimsy to any event. Ideal for weddings, corporate events, parties, and more, these arches are a beautiful fusion of color and style.</p>
+                        
+                    </div>
+            
+        </div>
+        <div class="service__item">
+            <div class="service__icon ">
+                <img class="border icontextfade" src="/public/images/ballonWall.jpg">
+            </div>
+                <div class="service__title">
+                    <h1>Ballon Wall</h1>
+                </div>
+                    <div class="service__description">
+                        <p>  Our Balloon Walls are more than just decorations; they are immersive art installations that captivate and delight. Perfect for corporate events, weddings, birthday parties, or any occasion looking for that 'wow' factor.</p>
+
+                    </div>
+            
+        </div>
+        <div class="service__item">
+            <div class="service__icon ">
+                <img class="border icontextfade" src="/public/images/centerPiece.jpg">
+            </div>
+                <div class="service__title">
+                    <h1>Center Pieces</h1>
+                </div>
+                    <div class="service__description">
+                        <p> Elevate your event's ambiance with the exquisite charm of Balloon Centerpieces. These artistic creations are more than just table decorations; they are a statement of style and sophistication, perfect for weddings, corporate events, parties, and more.</p>
+
+                    </div>
+            
+                    
+        </div>
+        
+</div>
+
+    <div class="service__more">
+        <h1>Add Much More!</h1>
+        <p></p>
+    </div>
+
+</section>
+<section class="process">
+    <div class="process__container">
+        <div class="process_title">
+            <h1>Our Process</h1>
+        </div>
+        <div class="process_grid">
+
+            
+                <div class="process__item1">  
+                    <div class="process__icon1">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.663 17H14.336M12 3V4M18.364 5.636L17.657 6.343M21 12H20M4 12H3M6.343 6.343L5.636 5.636M8.464 15.536C7.76487 14.8367 7.2888 13.9458 7.09598 12.9759C6.90316 12.006 7.00225 11.0008 7.38073 10.0872C7.75921 9.17366 8.40007 8.39284 9.22229 7.84349C10.0445 7.29414 11.0111 7.00093 12 7.00093C12.9889 7.00093 13.9555 7.29414 14.7777 7.84349C15.5999 8.39284 16.2408 9.17366 16.6193 10.0872C16.9977 11.0008 17.0968 12.006 16.904 12.9759C16.7112 13.9458 16.2351 14.8367 15.536 15.536L14.988 16.083C14.6747 16.3963 14.4262 16.7683 14.2567 17.1777C14.0872 17.5871 13.9999 18.0259 14 18.469V19C14 19.5304 13.7893 20.0391 13.4142 20.4142C13.0391 20.7893 12.5304 21 12 21C11.4696 21 10.9609 20.7893 10.5858 20.4142C10.2107 20.0391 10 19.5304 10 19V18.469C10 17.574 9.644 16.715 9.012 16.083L8.464 15.536Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="process__description1">
+                        <h2>Idea Consultation</h2>
+                        <p>Your vision is our inspiration. In this first step, we discuss your ideas, themes, and preferences. Whether you have a fully-formed concept or need guidance to develop one, we're here to make your ideas come to life.</p>
+                    </div>
+                </div>
+
+
+                <div class="process__item2">  
+                    <div class="process__icon2">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.71 7.04C21.1 6.65 21.1 6 20.71 5.63L18.37 3.29C18 2.9 17.35 2.9 16.96 3.29L15.12 5.12L18.87 8.87M3 17.25V21H6.75L17.81 9.93L14.06 6.18L3 17.25Z" fill="black"/>
+                            </svg>
+                    </div> 
+                    <div class="process__description2">
+                        <h2>Custom Design</h2>
+                        <p>Our expert designers craft a unique balloon decor plan tailored to your event. We provide sketches and digital mockups, ensuring every detail aligns with your vision.</p>
+                    </div>
+                </div>
+                
+                <div class="process__item3">
+                    <div class="process__icon3">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 12C2 8.229 2 6.343 3.172 5.172C4.343 4 6.229 4 10 4H14C17.771 4 19.657 4 20.828 5.172C22 6.343 22 8.229 22 12V14C22 17.771 22 19.657 20.828 20.828C19.657 22 17.771 22 14 22H10C6.229 22 4.343 22 3.172 20.828C2 19.657 2 17.771 2 14V12Z" stroke="black" stroke-width="1.5"/>
+                            <path d="M7 4V2.5M17 4V2.5M2.5 9H21.5" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M18 17C18 17.2652 17.8946 17.5196 17.7071 17.7071C17.5196 17.8946 17.2652 18 17 18C16.7348 18 16.4804 17.8946 16.2929 17.7071C16.1054 17.5196 16 17.2652 16 17C16 16.7348 16.1054 16.4804 16.2929 16.2929C16.4804 16.1054 16.7348 16 17 16C17.2652 16 17.5196 16.1054 17.7071 16.2929C17.8946 16.4804 18 16.7348 18 17ZM18 13C18 13.2652 17.8946 13.5196 17.7071 13.7071C17.5196 13.8946 17.2652 14 17 14C16.7348 14 16.4804 13.8946 16.2929 13.7071C16.1054 13.5196 16 13.2652 16 13C16 12.7348 16.1054 12.4804 16.2929 12.2929C16.4804 12.1054 16.7348 12 17 12C17.2652 12 17.5196 12.1054 17.7071 12.2929C17.8946 12.4804 18 12.7348 18 13ZM13 17C13 17.2652 12.8946 17.5196 12.7071 17.7071C12.5196 17.8946 12.2652 18 12 18C11.7348 18 11.4804 17.8946 11.2929 17.7071C11.1054 17.5196 11 17.2652 11 17C11 16.7348 11.1054 16.4804 11.2929 16.2929C11.4804 16.1054 11.7348 16 12 16C12.2652 16 12.5196 16.1054 12.7071 16.2929C12.8946 16.4804 13 16.7348 13 17ZM13 13C13 13.2652 12.8946 13.5196 12.7071 13.7071C12.5196 13.8946 12.2652 14 12 14C11.7348 14 11.4804 13.8946 11.2929 13.7071C11.1054 13.5196 11 13.2652 11 13C11 12.7348 11.1054 12.4804 11.2929 12.2929C11.4804 12.1054 11.7348 12 12 12C12.2652 12 12.5196 12.1054 12.7071 12.2929C12.8946 12.4804 13 12.7348 13 13ZM8 17C8 17.2652 7.89464 17.5196 7.70711 17.7071C7.51957 17.8946 7.26522 18 7 18C6.73478 18 6.48043 17.8946 6.29289 17.7071C6.10536 17.5196 6 17.2652 6 17C6 16.7348 6.10536 16.4804 6.29289 16.2929C6.48043 16.1054 6.73478 16 7 16C7.26522 16 7.51957 16.1054 7.70711 16.2929C7.89464 16.4804 8 16.7348 8 17ZM8 13C8 13.2652 7.89464 13.5196 7.70711 13.7071C7.51957 13.8946 7.26522 14 7 14C6.73478 14 6.48043 13.8946 6.29289 13.7071C6.10536 13.5196 6 13.2652 6 13C6 12.7348 6.10536 12.4804 6.29289 12.2929C6.48043 12.1054 6.73478 12 7 12C7.26522 12 7.51957 12.1054 7.70711 12.2929C7.89464 12.4804 8 12.7348 8 13Z" fill="black"/>
+                            </svg>
+                    </div> 
+                    <div class="process__description3">
+                        <h2>Schedule and Plan</h2>
+                        <p>Once the design is finalized, we set a date and time for installation. We coordinate with you or your event planner to ensure our setup fits seamlessly into your event's schedule.</p>
+                    </div>
+                </div>
+
+            
+
+            
+                <div class="process__item4">
+                    <div class="process__icon4">
+                        <svg width="32" height="32" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_3_4)">
+                            <path d="M8.5 5C8.76522 5 9.01957 4.89464 9.20711 4.70711C9.39464 4.51957 9.5 4.26522 9.5 4C9.5 3.73478 9.39464 3.48043 9.20711 3.29289C9.01957 3.10536 8.76522 3 8.5 3C8.23478 3 7.98043 3.10536 7.79289 3.29289C7.60536 3.48043 7.5 3.73478 7.5 4C7.5 4.26522 7.60536 4.51957 7.79289 4.70711C7.98043 4.89464 8.23478 5 8.5 5ZM4.5 10C4.63261 10 4.75979 9.94732 4.85355 9.85355C4.94732 9.75979 5 9.63261 5 9.5C5 9.36739 4.94732 9.24021 4.85355 9.14645C4.75979 9.05268 4.63261 9 4.5 9C4.36739 9 4.24021 9.05268 4.14645 9.14645C4.05268 9.24021 4 9.36739 4 9.5C4 9.63261 4.05268 9.75979 4.14645 9.85355C4.24021 9.94732 4.36739 10 4.5 10ZM4.5 6.5C4.76522 6.5 5.01957 6.39464 5.20711 6.20711C5.39464 6.01957 5.5 5.76522 5.5 5.5C5.5 5.23478 5.39464 4.98043 5.20711 4.79289C5.01957 4.60536 4.76522 4.5 4.5 4.5C4.23478 4.5 3.98043 4.60536 3.79289 4.79289C3.60536 4.98043 3.5 5.23478 3.5 5.5C3.5 5.76522 3.60536 6.01957 3.79289 6.20711C3.98043 6.39464 4.23478 6.5 4.5 6.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.52 12.28C9.50886 12.086 9.44145 11.8995 9.32601 11.7432C9.21058 11.587 9.05212 11.4677 8.87 11.4C8.41771 11.2513 8.03328 10.9462 7.78583 10.5395C7.53838 10.1327 7.44415 9.65106 7.52007 9.18105C7.596 8.71105 7.8371 8.28354 8.20003 7.9754C8.56295 7.66726 9.0239 7.49869 9.5 7.5H11.37C11.6907 7.5009 12.007 7.42464 12.292 7.27767C12.5771 7.1307 12.8227 6.91732 13.008 6.65554C13.1933 6.39375 13.3129 6.09124 13.3568 5.77353C13.4006 5.45581 13.3674 5.1322 13.26 4.83C12.8623 3.70697 12.1635 2.71485 11.2401 1.96205C10.3167 1.20924 9.20416 0.724704 8.02402 0.561374C6.84389 0.398044 5.64156 0.562205 4.54841 1.03592C3.45525 1.50964 2.51332 2.27468 1.82552 3.24748C1.13772 4.22027 0.730509 5.36339 0.648383 6.55194C0.566258 7.74049 0.812373 8.92875 1.35984 9.9869C1.90731 11.045 2.73507 11.9324 3.75268 12.5519C4.77029 13.1715 5.93862 13.4995 7.13 13.5C7.71836 13.5016 8.30405 13.4209 8.87 13.26C9.07787 13.2018 9.25787 13.0707 9.37719 12.8908C9.49651 12.7109 9.5472 12.4942 9.52 12.28Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_3_4">
+                            <rect width="14" height="14" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                    </div>
+                    <div class="process__description4">
+                        <h2>Creation</h2>
+                        <p>Our skilled team gets to work on creating your balloon decor. Using the highest quality materials, we meticulously construct each piece, ensuring perfection and durability.</p>
+                    </div>
+                </div>
+
+                <div class="process__item5">
+                    <div class="process__icon5">
+                        <svg width="34" height="34" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 6C14.788 6 13 7.788 13 10V11H7.01001C6.02301 11 5.11001 11.542 4.64501 12.424L1.26001 18.865L1.24601 18.897C1.08254 19.2416 0.998477 19.6186 1.00001 20V21H1.91001C2.51001 21 3.00001 21.49 3.00001 22.09V23.91C3.00001 24.51 2.51001 25 1.91001 25H1.10901C1.27688 25.5789 1.62796 26.0877 2.10955 26.4501C2.59115 26.8125 3.17728 27.009 3.78001 27.01H4.02901C3.95781 26.3804 4.02037 25.7429 4.2126 25.1391C4.40483 24.5354 4.7224 23.979 5.14451 23.5065C5.56662 23.0339 6.08376 22.6559 6.66209 22.397C7.24042 22.1382 7.86689 22.0043 8.5005 22.0043C9.13412 22.0043 9.76059 22.1382 10.3389 22.397C10.9172 22.6559 11.4344 23.0339 11.8565 23.5065C12.2786 23.979 12.5962 24.5354 12.7884 25.1391C12.9806 25.7429 13.0432 26.3804 12.972 27.01H19.029C18.9578 26.3804 19.0204 25.7429 19.2126 25.1391C19.4048 24.5354 19.7224 23.979 20.1445 23.5065C20.5666 23.0339 21.0838 22.6559 21.6621 22.397C22.2404 22.1382 22.8669 22.0043 23.5005 22.0043C24.1341 22.0043 24.7606 22.1382 25.3389 22.397C25.9172 22.6559 26.4344 23.0339 26.8565 23.5065C27.2786 23.979 27.5962 24.5354 27.7884 25.1391C27.9806 25.7429 28.0432 26.3804 27.972 27.01H28.2C29.468 27.01 30.544 26.16 30.886 25H30.55C29.74 25 29.04 24.38 29 23.57C28.96 22.71 29.65 22 30.5 22H31V10C31 7.788 29.212 6 27 6H17ZM15 20V10C15 8.892 15.892 8 17 8H27C28.108 8 29 8.892 29 10V20H15ZM14 20H3.00001C2.99851 19.958 3.00221 19.9161 3.01101 19.875C3.0243 19.826 3.0417 19.7781 3.06301 19.732L3.44701 19H8.9C9.51 19 10 18.51 10 17.9V15.11C10 14.5 9.51 14.01 8.9 14.01H6.07001L6.41501 13.356C6.47228 13.248 6.558 13.1578 6.66287 13.095C6.76775 13.0323 6.88779 12.9994 7.01001 13H14V20Z" fill="black"/>
+                            <path d="M12 26.5C12 27.4283 11.6313 28.3185 10.9749 28.9749C10.3185 29.6313 9.42826 30 8.5 30C7.57174 30 6.6815 29.6313 6.02513 28.9749C5.36875 28.3185 5 27.4283 5 26.5C5 25.5717 5.36875 24.6815 6.02513 24.0251C6.6815 23.3687 7.57174 23 8.5 23C9.42826 23 10.3185 23.3687 10.9749 24.0251C11.6313 24.6815 12 25.5717 12 26.5ZM8.5 28C8.89782 28 9.27936 27.842 9.56066 27.5607C9.84196 27.2794 10 26.8978 10 26.5C10 26.1022 9.84196 25.7206 9.56066 25.4393C9.27936 25.158 8.89782 25 8.5 25C8.10218 25 7.72064 25.158 7.43934 25.4393C7.15804 25.7206 7 26.1022 7 26.5C7 26.8978 7.15804 27.2794 7.43934 27.5607C7.72064 27.842 8.10218 28 8.5 28ZM27 26.5C27 27.4283 26.6313 28.3185 25.9749 28.9749C25.3185 29.6313 24.4283 30 23.5 30C22.5717 30 21.6815 29.6313 21.0251 28.9749C20.3687 28.3185 20 27.4283 20 26.5C20 25.5717 20.3687 24.6815 21.0251 24.0251C21.6815 23.3687 22.5717 23 23.5 23C24.4283 23 25.3185 23.3687 25.9749 24.0251C26.6313 24.6815 27 25.5717 27 26.5ZM23.5 28C23.8978 28 24.2794 27.842 24.5607 27.5607C24.842 27.2794 25 26.8978 25 26.5C25 26.1022 24.842 25.7206 24.5607 25.4393C24.2794 25.158 23.8978 25 23.5 25C23.1022 25 22.7206 25.158 22.4393 25.4393C22.158 25.7206 22 26.1022 22 26.5C22 26.8978 22.158 27.2794 22.4393 27.5607C22.7206 27.842 23.1022 28 23.5 28Z" fill="black"/>
+                            </svg>   
+                    </div>
+                    <div class="process__description5">
+                        <h2>Delivery and Installation</h2>
+                        <p>Leave the logistics to us. Our professional team handles the transportation and installation of your balloon decor, ensuring everything is set up safely and on time for your event.</p>
+                    </div>    
+                </div>
+
+                <div class="process__item6">
+                    <div class="process__icon6">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 1L17.74 3.75L15 5L17.74 6.26L19 9L20.25 6.26L23 5L20.25 3.75M9 4L6.5 9.5L1 12L6.5 14.5L9 20L11.5 14.5L17 12L11.5 9.5M19 15L17.74 17.74L15 19L17.74 20.25L19 23L20.25 20.25L23 19L20.25 17.74" fill="black"/>
+                            </svg> 
+                    </div>
+                    <div class="process__description6">
+                        <h2>Event Ready</h2>
+                        <p>As the final step, we make sure everything looks perfect. Your balloon decor is now ready to dazzle your guests and add that special touch to your event!</p>
+                    </div>
+                </div>
+            
+        </div>
+</section>
+
+<section class="ourClients">
+    <div class="ourClients__container">
+        <h1>Our Clients</h1>
+        <p>At Express Ballons, we take pride in our diverse portfolio of satisfied clients. Our balloon decor has brightened numerous events, spanning from local vendor fairs to grand corporate events. Here's a glimpse at some of the clients we've had the pleasure of working with:</p>
+        <b>Local Vendors</b>
+        <p>
+            We've partnered with local businesses to add a pop of color and excitement to their spaces. From grand openings to special sales events, our balloon decorations have helped local vendors attract and delight their customers.</p>
+        <p>Corporate Events
+            Our corporate clients trust us to deliver professional and elegant balloon decor that adds a sophisticated touch to their events. Whether it's a company celebration, a product launch, or a team-building event, we've provided decor that perfectly matches their brand and event theme.</p>
+        <p>Educational Institutions
+            Schools and colleges have chosen us for graduations, sports events, and other school functions. Our balloon arrangements have added fun and festivity to these educational milestones.</p>
+        <p>Event Venues
+            We've collaborated with various event venues to enhance their spaces for weddings, conferences, and other large gatherings. Our balloons have transformed these venues, contributing to the ambiance and theme of countless events.</p>
+        <h1>Invite Us to Be Part of Your Next Event</h1>
+        <p>
+
+            Whether you're planning a small gathering or a large-scale event, Express Ballons is here to bring your vision to life with our stunning balloon decor. Join our growing list of happy clients and let us add a touch of magic to your next event!
+            
+            [Contact Us] [View Gallery]</p>
+        </div>
+
+
+</section>
+
+<section class="ig">
+    <p>check out more creations @officialexpressballoons</p>
+    
+                    
+              
+
+                    <a href="https://www.instagram.com/p/CSHgUp9Fp5b/" target="_blank" rel="noopener">
+
+                        <div class="ig__container" style="width:16.666667%;padding-top:16.666667%;">
+                            <img src="/public/images/greenBallonWall.jpg" >
+                        
+
+                            <div style="width:99%;height:99%;" class="ig__overlay">
+
+                        
+                            </div>
+                        
+                        </div>
+                    </a>
+
+                    
+                    
+                    <a href="https://www.instagram.com/p/CaCUhCHlxe9/" target="_blank" rel="noopener">
+
+                        <div class="ig__container" style="width:14.82%;padding-top:16.66666%;">
+                            <img src="/public/images/ballonSign.jpg" >
+                        
+
+                            <div style="width:99%;height:99%;" class="ig__overlay">
+
+                        
+                            </div>
+                        
+                        </div>
+                    </a>
+
+                    <a href="https://www.instagram.com/p/Cf4eSn_PAs5/" target="_blank" rel="noopener">
+
+                        <div class="ig__container" style="width:16.666667%;padding-top:16.666667%;">
+                            <img src="/public/images/ballonCeiling.jpg" >
+                        
+
+                            <div class="ig__overlay">
+
+                        
+                            </div>
+                        
+                        </div>
+                    </a>
+
+                    <a href="https://www.instagram.com/p/CU4822TF5Z_/" target="_blank" rel="noopener">
+
+                        <div class="ig__container" style="width:16.666667%;padding-top:16.666667%;">
+                            <img src="/public/images/greenArch.jpg" >
+                        
+
+                            <div class="ig__overlay">
+
+                        
+                            </div>
+                        
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/officialexpressballoons/" target="_blank" rel="noopener">
+
+                        <div class="ig__container" style="width:16.666667%;padding-top:16.666667%;">
+                            <img src="/public/images/goldGarland.jpg" >
+                        
+
+                            <div class="ig__overlay">
+
+                        
+                            </div>
+                        
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/p/CZxXXvVvasP/" target="_blank" rel="noopener">
+
+                        <div class="ig__container" style="width:16.666667%;padding-top:16.666667%;">
+                            <img src="/public/images/column.jpg" >
+                        
+
+                            <div class="ig__overlay">
+
+                        
+                            </div>
+                        
+                        </div>
+                    </a>
+
+
+
+       
+    <!--<div class="followig__common">
+        
+    </div>-->
+
+
+
+
+</section>
+   
+    
+    <script src="/public/app/js/index.js"></script> 
+
+    </body>
+
+    <footer class="footer">
+        <div class="container">
+            <a href="/" class="footer__logo ">
+                <img src="/public/images/Exlogo.png"alt="express ballons" height="40" width="140" />
+            </a>
+    
+                <div class="footer__slogan col">
+                    <p> Next level ballon artistry</p>
+                </div>
+    
+                    
+    
+                    <div class="footer__links col1">
+                        <h4>Explore</h4>
+                        <a href="">About Us</a>
+                        <a href="">Contact Us</a>
+                        <a href="">Gallery</a>
+                        <a href="">FAQs</a>
+                    </div>
+            
+                <div class="footer__hours col2">
+                    <h4>Customer Service</h4>
+                    <p>Mon-Fri: 9am-4pm EST</p>
+                    <p>Saturday: closed</p>
+                    <p>Sunday: closed</p>
+                </div>
+       
+                <div class="footer__socials">
+                    <h4>Follow Us!</h4>
+                    <a href="https://www.facebook.com/OfficialExpressBalloons/">
+                        <svg fill="rgb(71, 78, 128)" version="1.1" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 32 32"><title>Facebook</title><path d="M31.997 15.999c0-8.836-7.163-15.999-15.999-15.999s-15.999 7.163-15.999 15.999c0 7.985 5.851 14.604 13.499 15.804v-11.18h-4.062v-4.625h4.062v-3.525c0-4.010 2.389-6.225 6.043-6.225 1.75 0 3.581 0.313 3.581 0.313v3.937h-2.017c-1.987 0-2.607 1.233-2.607 2.498v3.001h4.437l-0.709 4.625h-3.728v11.18c7.649-1.2 13.499-7.819 13.499-15.804z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/officialexpressballoons/"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20"><title>instagram</title><path fill="rgb(71, 78, 128)" d="M10.333 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.976 1.409 4.1 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.058 4.042-.124 2.687-1.386 3.975-4.099 4.099-1.055.048-1.37.058-4.042.058-2.67 0-2.986-.01-4.04-.058-2.717-.124-3.976-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zm0-1.802C7.618 0 7.278.012 6.211.06 2.579.227.56 2.242.394 5.877.345 6.944.334 7.284.334 10s.011 3.057.06 4.123c.166 3.632 2.181 5.65 5.816 5.817 1.068.048 1.408.06 4.123.06 2.716 0 3.057-.012 4.124-.06 3.628-.167 5.651-2.182 5.816-5.817.049-1.066.06-1.407.06-4.123s-.011-3.056-.06-4.122C20.11 2.249 18.093.228 14.458.06 13.39.01 13.049 0 10.333 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.339-9.87a1.2 1.2 0 10-.001 2.4 1.2 1.2 0 000-2.4z"/></svg>
+                    </a>
+                </div>
+    
+                <div class="footer__cta">
+                    <a href="book.html" class="button footer__botton header__menulinks"> BOOK NOW</a>
+                </div>
+                    <div class="footer__copyright">
+                        &copy; 2022 Express Balloons. All Rights Reserved.
+                    </div>
+
+        </div>
+        
+               
+            
+
+            
+
+
+            
+            
+        
+            
+
+        
+            
+    </footer>
+
+</html>

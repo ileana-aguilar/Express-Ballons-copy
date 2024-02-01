@@ -1,0 +1,17 @@
+{
+    "window.zoomLevel": 0,
+   
+
+    "liveSassCompile.settings.formats": [
+        
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/dist",
+           
+        }
+    ],
+    
+    "liveServer.settings.ChromeDebuggingAttachment": false,
+    "liveServer.settings.port": 5501,
+}

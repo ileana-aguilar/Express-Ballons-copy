@@ -1,0 +1,362 @@
+.quote{
+    select {
+        width: 100%;
+        padding:10px;
+        border-radius:10px;
+      }
+
+     input[type=text]{
+        margin-top: .5rem;
+        width: 100%;
+        padding:10px;
+        border-radius:12px;
+        border: 2px solid #ccc;
+      }
+
+      input[type=tel]{
+        margin-top: .5rem;
+        width: 100%;
+        padding:10px;
+        border-radius:12px;
+        border: 2px solid #ccc;
+      }
+      input[type=email]{
+        margin-top: .5rem;
+        width: 100%;
+        padding:10px;
+        border-radius:12px;
+        border: 2px solid #ccc;
+      }
+
+      input[type=date]{
+        margin-top: .5rem;
+        width: 100%;
+        padding:10px;
+        border-radius:12px;
+        border: 2px solid #ccc;
+      }
+
+      input[type=time]{
+        margin-top: .5rem;
+        width: 100%;
+        padding:10px;
+        border-radius:12px;
+        border: 2px solid #ccc;
+      }
+
+      input[type=checkbox]{
+        margin-top: .5rem;
+        height: 30px;
+        width: 30px;
+        padding:10px;
+        border: 2px solid #ccc;
+        
+      }
+
+      input[type=radio]{
+        margin-top: .5rem;
+        height: 20px;
+        width: 20px;
+      }
+
+      input[type=submit]{
+        margin-top: 2rem;
+        width: 7rem;
+        height: 3rem;
+        border-radius:12px;
+        background: $headerdarkBlue;
+        border: 2px solid #ccc;
+        font-weight: 400;
+        font-size: 1rem;
+        color:$white;
+      }
+
+      input[type=submit]:hover{
+        margin-top: 2rem;
+        width: 7rem;
+        height: 3rem;
+        border-radius:12px;
+        background: rgb(241, 241, 241);
+        border: 2px solid $headerdarkBlue;
+        color: $headerdarkBlue;
+        font-weight: 400;
+        font-size: 1rem;
+        transition: ease-in-out 0.7s;
+      }
+
+
+      #other{
+        margin-top: .5rem;
+        width: 90%;
+        padding:10px;
+        border-radius:12px;
+        border: 2px solid $white; 
+      }
+   
+
+     
+
+      textarea{
+        margin-top: .5rem;
+        width: 100%;
+        height: 5rem;
+        padding:10px;
+        border-radius:12px;
+        border: 2px solid #ccc;
+      }
+    
+      .parent{
+        position: relative;
+    }
+    .child1{
+        color: $white;
+        position: absolute;
+        width: 100%;
+        height: 550px;
+        z-index: 1;
+        background: $lightBlue;
+        border-top: $white;
+        border-top-style: solid;
+  border-top-width: 0.01rem;
+  padding-top: 1rem;
+  
+        //opacity: 0.9;
+        
+            h1{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+            }
+            p1{
+               
+                margin: 2rem;
+            }
+    }
+
+    .request{
+        padding: 1rem;
+
+    }
+    .child2{
+        justify-content: center;
+        position: absolute;
+        padding: 2rem;
+        top: 200px;
+        left: 10%;
+        right: 10%;
+        width: 80%;
+        height:auto;
+        z-index: 2;
+        background: $white;
+        //opacity: 0.9;
+        border-radius: 5px;
+        box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        ;
+        
+    }
+
+    .child2 .h1{
+        font-size: 2rem;
+        position: relative;
+
+    }
+    
+    .child2 .h1::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 30px;
+        background: linear-gradient(135deg, #71b7e6, $darkBlue);
+       // #9b59b6
+    }
+
+
+     .child2 form .customer-details .wrap{
+         display: flex;
+         flex-wrap: wrap;
+         //justify-content: space-between;
+         margin: 2px 0 12px 0;
+         
+     }
+     
+     .input-box{
+        margin-top: 1rem;
+         margin-right: 2rem;
+         width: 48.3%;
+     }
+     .companynameinput-box{
+        margin-top: 1rem;
+        margin-right: 2rem;
+         width: 100%;
+     }
+
+     #flexibledate{
+         display: none;
+         width:100%;
+         border: 2px solid magenta;
+
+     }
+     .eventstreet  {
+        
+        margin-right: 2rem;
+        //margin: 2px 0 12px 0;
+        width: 100%
+    }
+     .eventapt {
+        margin-right: 2rem;
+        //margin: 2px 0 12px 0;
+        width:100%
+     }
+     .eventcity{
+       // margin: 2px 0 12px 0;
+        margin-right: 2rem;
+        width:56.5%
+    }
+     .eventstate{
+        //margin: 2px 0 12px 0;
+        margin-right: 2rem;
+        width:12%
+    }
+     .eventzip{
+        //margin: 2px 0 12px 0;
+        
+        margin-right: 2rem;
+         width:26.5%
+     }
+     .event-type{
+        margin-right: 2rem;
+        width: 30%;
+
+     }
+     .areas-decorated{
+        margin-right: 2rem;
+         width: 30%;
+     }
+     .designs-wanted{
+        margin-right: 2rem;
+        width: 30%;
+     }
+     .designs-wanted input[type=text]{
+         width: 2.5rem;
+         border-radius:0;
+     }
+     .extrainfo input[type=text]{
+        height: 8rem;
+    }
+
+    .fieldset-space{
+        margin-top: 3rem;
+
+    }
+
+    .inspo{
+        height: 250px;
+        width: 38rem;
+        padding: 1.5rem;
+        background-color: $veryLightGray;
+        border-radius: 8px;
+    }
+    .drop-zone{
+        display: flex;
+        flex-direction: column;
+        width: 35rem;
+        height: 200px;
+        //padding-left: 10.5rem;
+        //padding-right: 10.5rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.1rem;
+        color: gray;
+        border: 3px dashed gray;
+        border-radius: 7px;
+        background-color: $veryLightGray;
+
+        
+    }
+
+    .drop-zone.active{
+        border: 3px solid gray;
+    }
+
+    .drop-zone .file-select-botton{
+        background-color: $veryLightGray;
+        color: $lightlightBlue;
+        font-weight: 500;
+        font-size: 1.1rem;
+        cursor: pointer;
+        text-decoration: none;
+        border: none;
+    }
+    .drop-zone .file-select-botton.active{
+        display: none;
+    }
+
+    .drop-zone .icon{
+        font-size: 100px;
+        color: #fff;
+      }
+      
+
+      .filesvg.active{
+          display: none;
+
+      }
+    
+      .drop-zone .file-reset-botton{
+          display: none;
+      }
+      .drop-zone .file-reset-botton.active{
+          display:flex;
+          background-color: rgb(232, 119, 119);
+          margin: auto;
+          padding-left: 0.5rem;
+          padding-right: 0.5rem;
+        color: $veryLightGray;
+        font-weight: 500;
+        font-size: 1.1rem;
+        cursor: pointer;
+        text-decoration: none;
+        border: none;
+        border-radius: 0.4rem;
+      }
+
+      //thumbnail
+      .result{
+          display: none;
+      }
+      .result.active{
+          display: flex;
+          justify-content: center;
+          gap: 0.5rem;
+          padding: 0.5rem 0;
+          height: 4rem;
+          width: 100%;
+          border-radius: 0.1rem;
+      }
+      
+      .drop-zone img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 0.3rem;
+      }
+
+      
+   
+     
+}
+
+.space{
+    height: 156rem;
+    background-color: $white;
+}

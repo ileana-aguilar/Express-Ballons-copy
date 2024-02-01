@@ -1,0 +1,127 @@
+.has-fade {
+    visibility: hidden;
+}
+
+@keyframes fade-in {
+    from {
+      visibility: hidden;
+      opacity: 0;
+    }
+    1% {
+      visibility: visible;
+      opacity: 0;
+    }
+    to {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  .fade-in {
+    animation: fade-in 200ms ease-in-out forwards;
+  }
+  
+  @keyframes fade-out {
+    from {
+      visibility: visible;
+      opacity: 1;
+    }
+    99% {
+      visibility: visible;
+      opacity: 0;
+    }
+    to {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+  .fade-out {
+    animation: fade-out 200ms ease-in-out forwards;
+  }
+
+  .fade {
+    animation: fade 1.5s;
+  }
+
+  @keyframes fade {
+
+    from{
+      opacity: 0.4;
+    }
+
+    to{
+      opacity: 1;
+    }
+    
+  }
+
+  @keyframes herofade {
+    0% {
+      visibility: hidden;
+      opacity: 0;
+    }
+    1% {
+      visibility: visible;
+      opacity: 0;
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  .herofade {
+    animation: herofade 2000ms ease-in-out forwards;
+  }
+ 
+
+  .textfade{
+    
+    opacity: 0;
+    transition: opacity 250ms ease-in ;
+    
+  }
+
+  .textfade.appear{
+    
+    opacity: 1;
+  }
+
+  .icontextfade{
+    
+    opacity: 0;
+    transition: opacity 250ms ease-in ;
+    
+  }
+
+  .icontextfade.appear{
+    
+    opacity: 1;
+  }
+
+  .textright{
+    
+    transform: translateX(-50%);
+    transition: transform 400ms ease-in ;
+    
+  }
+
+  .textright.appear{
+    
+    transform: translateX(0);
+  }
+
+  @keyframes content{
+    0%{
+      opacity: 0;
+    transform: translateX(-100%);
+    
+
+    }
+    100%{
+      opacity: 1;
+    transform: translateX(0);
+    
+    }
+  }
+  .content{
+    animation: content 1s ease-in 1s iteration-count direction forwards;
+  }

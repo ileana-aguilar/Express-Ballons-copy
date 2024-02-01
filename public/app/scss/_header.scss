@@ -1,0 +1,206 @@
+.header{
+ 
+// Hamburger open styles
+    &.open {
+
+        //.overlay{
+           // display: block;
+            
+        //}
+        .header__toggle{
+            > span:first-child {
+                transform: rotate(45deg);
+                position: absolute;
+                z-index: 3;
+            }
+          
+            > span:nth-child(2) {
+                opacity: 0;
+                
+            }
+          
+            > span:last-child {
+                transform: rotate(-45deg);
+                position: absolute;
+                z-index: 3;
+            }
+        }
+
+        
+    }
+
+    .overlay {
+        opacity: 0;
+        position: fixed;
+        top: 0px; //5.625rem;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: $darklightBlue; 
+        z-index: 1;
+        
+
+        //&.fade-in {
+            //display: block;
+        //}
+
+        //&.fade-out {
+         //   display: none;
+        //}
+    }
+    
+    nav{
+        position: relative;
+        padding-top: 1.0625rem;
+        padding-bottom: 1.625rem;
+        
+    }
+    
+    &_logo{
+        
+        img {
+           
+        }
+        
+    }
+
+   
+
+&__toggle { //moblie menu toggle
+    //hamburger menu
+            > span {
+                display: block;
+                width: 26px;
+                height: 2px;
+                background-color: $darkBlue;
+                transition: all 300ms ease-in-out;
+                transform-origin: 7.5px 1px;
+                
+
+            &:not(:last-child){
+                margin-bottom: 5px;
+                
+
+            }
+        
+        } 
+
+    }
+
+    &__menu{
+        background: $white;
+        margin-top: -5.6rem;
+        padding: 3rem;
+        border-radius: 3px;
+        position: absolute;
+        width: 70%;
+        height: 100%;
+        left: 30%;
+        z-index: 2;
+            
+    }
+
+    &__menulinks {
+        
+            display: table;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            padding: 0.5rem 0.8rem;
+            cursor: pointer;
+            color: $darkBlue;
+            
+            
+        
+        &:hover{
+            color: $lightBlue;
+            transition: color 200ms ease-in-out;
+        }
+
+        a:nth-child(5){
+            
+            margin-top: 6rem;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 1rem 2.3rem;
+
+            color: $white; 
+            
+        }
+
+       
+    }
+
+    &__links {
+        justify-content: center;
+        a {
+           
+            
+            font-size: $font-med;
+            color: $grayishBlue;
+            transition: color 200ms ease-in-out;
+
+            &:not(:last-child){
+                margin-right: 32px;
+            }
+
+            &:hover{
+                color:$darkGray;
+            }
+        }
+    }
+    
+    &__cta {
+        padding: 0.8rem 1.9rem;
+        font-size: $font-sm;
+        color: $white;
+        background: $headerdarkBlue;
+
+        &:hover {
+        //opacity: 0.75;
+        background: $white;
+        border: 1px solid $lightBlue;
+        color: $lightBlue;
+        transition: 0.7s;
+        }
+    }
+
+    &__cta2 {
+        padding: 0.5rem 1.125rem;
+        font-size: $font-sm;
+        color: $lightGreen;
+        background: $darkdarkBlue;
+
+        &:hover {
+        //opacity: 0.75;
+        padding: 0.4rem 1.054rem;
+        background: $white;
+        border: 1px solid $darkdarkBlue;
+        color: $darkdarkBlue;
+        transition: 0.7s;
+        }
+    }
+    
+
+    
+    &__socials{
+        text-align: center;
+        margin-top: 19rem;
+       
+        a{
+            display: inline-block;
+            margin-right: 1rem;
+            svg path{
+            transform:  fill 150ms ease-in-out;
+            }
+
+            &:hover svg path {
+                fill: $lightBlue;
+            }
+        }
+    }
+}
+
+
+

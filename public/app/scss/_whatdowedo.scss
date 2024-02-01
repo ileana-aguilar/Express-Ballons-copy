@@ -1,0 +1,78 @@
+.whatdowedo{
+    background-color: $purple;
+    color: $white;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    justify-items: center;
+
+    &__container{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+        @include breakpoint-up(large){
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            grid-template-rows: 2fr auto;
+            grid-template-areas: 
+                "question answer"
+                "question cta";
+                
+                padding-top: 8rem;
+                padding-bottom: 8rem;
+                gap: 1rem;
+        }
+    }
+
+    
+    &__question{
+        display: inline-block;
+        
+        @include breakpoint-up(large){
+        grid-area: question;
+        margin-top: 1.7rem;
+        justify-items: center;
+        }
+        h1{
+           font-size: 2rem; 
+           color: $white;
+        }
+    }
+
+
+    &__answer{
+        @include breakpoint-up(large){
+            grid-area: answer;
+            justify-items: start;
+            text-align: start;
+            }
+        p{
+
+        }
+    }
+    &__botton{
+        padding: 0.5rem 1.125rem;
+            font-size: $font-sm;
+            color: $white;
+            background: $lightlightBlue;
+        &:hover{
+            padding: 0.5rem 1.125rem;
+            background: $lightGreen;
+            //border: 3px solid $lightlightBlue;
+            color: $white;
+            //opacity: 0.75;
+            transition: 0.7s;
+        }
+    }
+
+    &__cta{
+
+        @include breakpoint-up(large){
+            grid-area: cta;
+            justify-self: start;
+            text-align: start;
+            }
+
+    }
+}
